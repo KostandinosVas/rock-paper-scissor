@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock-paper-scissor</title>
+</head>
+
+<body>
+    <script>
+        function computerPlay() {
+            let rps = ['Rock', 'Paper', 'Scissor'];
+            let comChoice = rps[Math.floor(Math.random() * rps.length)];
+            console.log('Computer :' + rps);
+        }
+
+        function playRound(playerSelection, computerSelection) {
+            const playerSelection = prompt.toUpperCase("Choose between rock, paper , scissor :")
+            const computerSelection = computerPlay();
+            return playerSelection + computerSelection;
+        }
+
+        function game() {
+            console.log(playRound());
+            console.log(playRound());
+            console.log(playRound());
+            console.log(playRound());
+            console.log(playRound());
+
+        }
+    </script>
+</body>
+
+</html>
